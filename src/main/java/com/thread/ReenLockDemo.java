@@ -33,7 +33,7 @@ public class ReenLockDemo {
             }
             int endTime = (int) System.currentTimeMillis();
             System.out.println("结束时间："+System.currentTimeMillis());
-            System.out.println("总用时时间为："+(endTime-startTime));
+            System.out.println("总用时时间："+(endTime-startTime));
             condition.signalAll();
         }catch (InterruptedException e) {
             e.printStackTrace();
